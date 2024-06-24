@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct AUFootballScheduleModel {
+    var id: String
+    var week: Int
+    var opponent: String
+    var conferenceType: String
+    var location: String
+    var gameTime: String
+}

@@ -11,6 +11,7 @@
 		0A69139F2C29B3EF0037AD7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69139E2C29B3EF0037AD7C /* ContentView.swift */; };
 		0A6913A12C29B3F00037AD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6913A02C29B3F00037AD7C /* Assets.xcassets */; };
 		0A6913A42C29B3F00037AD7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6913A32C29B3F00037AD7C /* Preview Assets.xcassets */; };
+		0A6913AB2C29BAD10037AD7C /* AUFootballScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6913AA2C29BAD10037AD7C /* AUFootballScheduleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0A69139E2C29B3EF0037AD7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A6913A02C29B3F00037AD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6913A32C29B3F00037AD7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A6913AA2C29BAD10037AD7C /* AUFootballScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUFootballScheduleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0A69139C2C29B3EF0037AD7C /* AUFootballScheduleApp.swift */,
 				0A69139E2C29B3EF0037AD7C /* ContentView.swift */,
+				0A6913AA2C29BAD10037AD7C /* AUFootballScheduleModel.swift */,
 				0A6913A02C29B3F00037AD7C /* Assets.xcassets */,
 				0A6913A22C29B3F00037AD7C /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A69139F2C29B3EF0037AD7C /* ContentView.swift in Sources */,
+				0A6913AB2C29BAD10037AD7C /* AUFootballScheduleModel.swift in Sources */,
 				0A69139D2C29B3EF0037AD7C /* AUFootballScheduleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
