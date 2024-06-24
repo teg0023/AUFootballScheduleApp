@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Text("Full Schedule")
+                Text("Home Schedule")
+                Text("Away Schedule")
+                Text("SEC Schedule")
+                Text("Nonconference Schedule")
+            }
+            .navigationTitle("2024 Auburn Football Schedule")
+            .listStyle(.grouped)
         }
-        .padding()
     }
 }
 
