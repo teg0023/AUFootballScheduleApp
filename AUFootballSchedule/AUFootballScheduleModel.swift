@@ -14,4 +14,5 @@ struct AUFootballScheduleModel {
     var conferenceType: String
     var location: String
     var gameTime: String
+    var gameDate: String
 }
