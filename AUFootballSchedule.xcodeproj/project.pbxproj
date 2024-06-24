@@ -67,12 +67,7 @@
 			children = (
 				0A69139C2C29B3EF0037AD7C /* AUFootballScheduleApp.swift */,
 				0ABC20172C2A03CE00ABBD51 /* AUFootballScheduleViewModel.swift */,
-				0A69139E2C29B3EF0037AD7C /* ContentView.swift */,
-				0ABC20192C2A051400ABBD51 /* FullScheduleView.swift */,
-				0ABC201B2C2A052900ABBD51 /* HomeScheduleView.swift */,
-				0ABC20212C2A058300ABBD51 /* NonconferenceView.swift */,
-				0ABC201F2C2A056A00ABBD51 /* ConferenceView.swift */,
-				0ABC201D2C2A054100ABBD51 /* AwayScheduleView.swift */,
+				0ABC20232C2A05DA00ABBD51 /* Views */,
 				0A6913AA2C29BAD10037AD7C /* AUFootballScheduleModel.swift */,
 				0A6913A02C29B3F00037AD7C /* Assets.xcassets */,
 				0A6913A22C29B3F00037AD7C /* Preview Content */,
@@ -86,6 +81,19 @@
 				0A6913A32C29B3F00037AD7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0ABC20232C2A05DA00ABBD51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A69139E2C29B3EF0037AD7C /* ContentView.swift */,
+				0ABC20192C2A051400ABBD51 /* FullScheduleView.swift */,
+				0ABC201B2C2A052900ABBD51 /* HomeScheduleView.swift */,
+				0ABC20212C2A058300ABBD51 /* NonconferenceView.swift */,
+				0ABC201F2C2A056A00ABBD51 /* ConferenceView.swift */,
+				0ABC201D2C2A054100ABBD51 /* AwayScheduleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
