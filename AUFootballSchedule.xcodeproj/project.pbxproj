@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0A69139C2C29B3EF0037AD7C /* AUFootballScheduleApp.swift */,
-				0ABC20172C2A03CE00ABBD51 /* AUFootballScheduleViewModel.swift */,
+				0ABC20252C2A065400ABBD51 /* ViewModel */,
 				0ABC20232C2A05DA00ABBD51 /* Views */,
 				0ABC20242C2A062400ABBD51 /* Model */,
 				0A6913A02C29B3F00037AD7C /* Assets.xcassets */,
@@ -102,6 +102,14 @@
 				0A6913AA2C29BAD10037AD7C /* AUFootballScheduleModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0ABC20252C2A065400ABBD51 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC20172C2A03CE00ABBD51 /* AUFootballScheduleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
