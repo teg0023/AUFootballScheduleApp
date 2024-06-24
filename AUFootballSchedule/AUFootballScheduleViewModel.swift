@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class AUFootballScheduleViewModel : ObservableObject {
+    
+    @Published private var schedule = [AUFootballScheduleModel]()
+    
+    func fetchData() {
+        
+    }
+}
