@@ -11,8 +11,8 @@ import FirebaseFirestore
 
 class AUFootballScheduleViewModel : ObservableObject {
     
-    @Published var schedule = [AUFootballScheduleModel]()
-    let db = Firestore.firestore()
+    @Published private(set) var schedule = [AUFootballScheduleModel]()
+    private let db = Firestore.firestore()
     
     func fetchData() {
         self.schedule.removeAll()
