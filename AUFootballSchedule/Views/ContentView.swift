@@ -18,10 +18,26 @@ struct ContentView: View {
                 } label: {
                     Text("Full Schedule")
                 }
-                Text("Home Schedule")
-                Text("Away Schedule")
-                Text("SEC Schedule")
-                Text("Nonconference Schedule")
+                NavigationLink {
+                    HomeScheduleView(homeSchedule: schedule.schedule)
+                } label: {
+                    Text("Home Schedule")
+                }
+                NavigationLink {
+                    AwayScheduleView(awaySchedule: schedule.schedule)
+                } label: {
+                    Text("Away Schedule")
+                }
+                NavigationLink {
+                    ConferenceView(conferenceSchedule: schedule.schedule)
+                } label: {
+                    Text("SEC Schedule")
+                }
+                NavigationLink {
+                    NonconferenceView(nonconferenceSchedule: schedule.schedule)
+                } label: {
+                    Text("Nonconference Schedule")
+                }
             }
             .navigationTitle("2024 Auburn Football Schedule")
             .listStyle(.grouped)

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ConferenceView: View {
+    var conferenceSchedule: [AUFootballScheduleModel]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(conferenceSchedule) { game in
+                if game.conferenceType == "SEC" {
+                    Group {
+                        GameItem(game: game)
+                    }
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    ConferenceView()
 }

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct AwayScheduleView: View {
+    var awaySchedule: [AUFootballScheduleModel]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(awaySchedule) { game in
+                if game.location != "Jordan-Hare Stadium, Auburn, AL" {
+                    Group {
+                        GameItem(game: game)
+                    }
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    AwayScheduleView()
 }

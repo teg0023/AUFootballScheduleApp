@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct NonconferenceView: View {
+    var nonconferenceSchedule: [AUFootballScheduleModel]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(nonconferenceSchedule) { game in
+                if game.conferenceType == "Nonconference" {
+                    Group {
+                        GameItem(game: game)
+                    }
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    NonconferenceView()
 }
