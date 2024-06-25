@@ -16,7 +16,7 @@ class AUFootballScheduleViewModel : ObservableObject {
     
     func fetchData() {
         self.schedule.removeAll()
-        db.collection("schedule")
+        db.collection("schedule").order(by: "week")
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
