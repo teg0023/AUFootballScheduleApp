@@ -9,15 +9,22 @@ import SwiftUI
 
 struct GameItem: View {
     var body: some View {
-        HStack {
-            Text("Week 1")
-            Image("Alabama A&M")
-            Text("Alabama A&M")
-            Text("Nonconference")
-            Spacer()
-            Text("Location")
-            Text("GameTime")
-            Text("GameDate")
+        VStack {
+            HStack {
+                Text("Week 1")
+                Image("Alabama A&M")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text("Alabama A&M")
+                    .multilineTextAlignment(.center)
+                Text("Nonconference")
+            }
+            HStack {
+                Text("Jordan-Hare Stadium, Auburn, AL")
+                    .multilineTextAlignment(.center)
+                Text("6:30pm CST")
+                Text("08/31/2024")
+            }
         }
     }
 }
