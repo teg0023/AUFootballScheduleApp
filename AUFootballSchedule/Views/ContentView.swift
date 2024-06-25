@@ -13,6 +13,10 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
+                Image("Stadium")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .border(.orange, width: 10.0)
                 NavigationLink {
                     FullScheduleView(fullSchedule: schedule.schedule)
                 } label: {
@@ -40,7 +44,6 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("2024 Auburn Football Schedule")
-            .listStyle(.grouped)
         }
         .onAppear {
             schedule.fetchData()
