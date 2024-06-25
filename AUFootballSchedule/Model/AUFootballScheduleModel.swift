@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct AUFootballScheduleModel {
-    var id: String
+struct AUFootballScheduleModel : Codable, Identifiable {
+    @DocumentID var id: String?
     var week: Int
     var opponent: String
     var conferenceType: String
