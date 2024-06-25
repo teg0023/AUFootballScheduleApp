@@ -22,6 +22,7 @@
 		0ABC56692C2ADEBF00CC2DDB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC56682C2ADEBF00CC2DDB /* FirebaseAnalytics */; };
 		0ABC566B2C2ADEBF00CC2DDB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC566A2C2ADEBF00CC2DDB /* FirebaseFirestore */; };
 		0ABC566D2C2ADEBF00CC2DDB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC566C2C2ADEBF00CC2DDB /* FirebaseFirestoreSwift */; };
+		0ABC566F2C2AE1EE00CC2DDB /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC566E2C2AE1EE00CC2DDB /* GameItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0ABC201F2C2A056A00ABBD51 /* ConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
 		0ABC20212C2A058300ABBD51 /* NonconferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonconferenceView.swift; sourceTree = "<group>"; };
 		0ABC56652C2ADBCE00CC2DDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0ABC566E2C2AE1EE00CC2DDB /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				0ABC20192C2A051400ABBD51 /* FullScheduleView.swift */,
 				0ABC201B2C2A052900ABBD51 /* HomeScheduleView.swift */,
 				0ABC20212C2A058300ABBD51 /* NonconferenceView.swift */,
+				0ABC566E2C2AE1EE00CC2DDB /* GameItem.swift */,
 				0ABC201F2C2A056A00ABBD51 /* ConferenceView.swift */,
 				0ABC201D2C2A054100ABBD51 /* AwayScheduleView.swift */,
 			);
@@ -202,6 +205,7 @@
 			files = (
 				0ABC201A2C2A051400ABBD51 /* FullScheduleView.swift in Sources */,
 				0ABC201E2C2A054100ABBD51 /* AwayScheduleView.swift in Sources */,
+				0ABC566F2C2AE1EE00CC2DDB /* GameItem.swift in Sources */,
 				0ABC20202C2A056A00ABBD51 /* ConferenceView.swift in Sources */,
 				0ABC20222C2A058300ABBD51 /* NonconferenceView.swift in Sources */,
 				0A69139F2C29B3EF0037AD7C /* ContentView.swift in Sources */,

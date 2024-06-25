@@ -9,7 +9,16 @@ import SwiftUI
 
 struct GameItem: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Week 1")
+            Image("Alabama A&M")
+            Text("Alabama A&M")
+            Text("Nonconference")
+            Spacer()
+            Text("Location")
+            Text("GameTime")
+            Text("GameDate")
+        }
     }
 }
 
