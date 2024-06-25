@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 class AUFootballScheduleViewModel : ObservableObject {
     
-    @Published private var schedule = [AUFootballScheduleModel]()
+    @Published var schedule = [AUFootballScheduleModel]()
     let db = Firestore.firestore()
     
     func fetchData() {

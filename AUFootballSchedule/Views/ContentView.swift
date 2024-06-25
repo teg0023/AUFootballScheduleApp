@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var schedule = AUFootballScheduleViewModel()
     var body: some View {
         NavigationStack {
             List {
-                Text("Full Schedule")
+                NavigationLink {
+                    FullScheduleView(fullSchedule: schedule.schedule)
+                } label: {
+                    Text("Full Schedule")
+                }
                 Text("Home Schedule")
                 Text("Away Schedule")
                 Text("SEC Schedule")
@@ -19,6 +25,9 @@ struct ContentView: View {
             }
             .navigationTitle("2024 Auburn Football Schedule")
             .listStyle(.grouped)
+        }
+        .onAppear {
+            schedule.fetchData()
         }
     }
 }
