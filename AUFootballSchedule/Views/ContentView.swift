@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State private var isHeadCoach = false
+    @State private var isWarEagle = false
     @ObservedObject var schedule = AUFootballScheduleViewModel()
     var body: some View {
         NavigationStack {
@@ -41,6 +42,22 @@ struct ContentView: View {
                     NonconferenceView(nonconferenceSchedule: schedule.schedule)
                 } label: {
                     Text("Nonconference Schedule")
+                }
+                Toggle(isOn: $isHeadCoach) {
+                    Text("Head Coach")
+                }
+                if isHeadCoach {
+                    Text("Hugh Freeze")
+                        .bold()
+                        .foregroundStyle(.orange)
+                }
+                Toggle(isOn: $isWarEagle) {
+                    Text("?")
+                }
+                if isWarEagle {
+                    Text("War Eagle! 🦅🐅")
+                        .bold()
+                        .foregroundStyle(.blue)
                 }
             }
             .navigationTitle("2024 Auburn Football Schedule")
